@@ -30,7 +30,7 @@ const CommentBox = ({ post, setPost }) => {
         const comment = { text, author }
         const updatedComments = { comments: [...post.comments, comment]}
 
-        const response = await fetch(`/posts/${post._id}`, {
+        const response = await fetch(`https://weichat.onrender.com/posts/${post._id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

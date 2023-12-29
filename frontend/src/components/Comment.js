@@ -6,7 +6,7 @@ const Comment = ({ post, comment, setPost }) => {
         
         const updatedComments = { comments: post.comments.filter((c) => ( comment._id !== c._id )) }
 
-        const response = await fetch(`/posts/${post._id}`, {
+        const response = await fetch(`https://weichat.onrender.com/posts/${post._id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

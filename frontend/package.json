@@ -1,5 +1,4 @@
 {
-  "proxy": "https://weichat.onrender.com",
   "homepage": ".",
   "name": "frontend",
   "version": "0.1.0",

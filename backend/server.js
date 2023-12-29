@@ -2,12 +2,16 @@ require('dotenv').config()
 const express = require('express')
 const postRoutes = require('./routes/posts')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
 // express app
 const app = express()
 
 // middleware
 app.use(express.json())
+app.use(cors({
+    origin: 'https://weichat.onrender.com'
+}))
 app.use((req, routes, next) => {
     console.log(req.path, req.method)
     next()

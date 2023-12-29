@@ -11,7 +11,7 @@ const Post = () => {
 
     useEffect(() => {
         const fetchPost = async () => {
-            const response = await fetch(`/posts/${id}`)
+            const response = await fetch(`https://weichat.onrender.com/posts/${id}`)
             const json = await response.json()
 
             if (response.ok) {

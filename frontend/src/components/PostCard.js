@@ -6,7 +6,7 @@ const PostCard = ({ post }) => {
     const handleClick = async (e) => {
         e.preventDefault()
 
-        await fetch(`/posts/${post._id}`, {
+        await fetch(`https://weichat.onrender.com/posts/${post._id}`, {
             method: "DELETE"
         })
 

@@ -6,7 +6,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch('/posts/')
+            const response = await fetch('https://weichat.onrender.com/posts/')
             const json = await response.json()
 
             if (response.ok) {
