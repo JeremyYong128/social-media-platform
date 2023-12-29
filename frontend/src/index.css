@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -44,16 +45,26 @@ header {
 
 header .container {
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--secondary-color);
 }
 
 header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   text-decoration: none;
   height: 60px;
@@ -66,6 +77,8 @@ header a:hover {
 }
 
 header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -81,6 +94,7 @@ header .right a {
 
 /* home */
 .posts {
+  display: -ms-grid;
   display: grid;
   grid-column: auto;
   grid-gap: 20px;
@@ -89,10 +103,13 @@ header .right a {
 /* post card */
 .post-card {
   background-color: var(--grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   color: #3d2700;
 }
@@ -102,11 +119,14 @@ a {
 }
 
 .post-card:hover {
-  box-shadow: 5px 5px 5px rgba(61, 39, 0, 0.3);
+  -webkit-box-shadow: 5px 5px 5px rgba(61, 39, 0, 0.3);
+          box-shadow: 5px 5px 5px rgba(61, 39, 0, 0.3);
 }
 
 .post-card .main-content {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .post-card .main-content .title {
@@ -122,14 +142,24 @@ a {
 .post-card .date-time {
   max-width: 200px;
   margin-left: auto;
-  flex-shrink: 0;
-  flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 
 .post-card .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* post */
@@ -152,8 +182,12 @@ a {
 .comment-card {
   background-color: var(--grey);
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -172,8 +206,13 @@ a {
 
 .comment-card form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .comment-card form * {
@@ -182,9 +221,16 @@ a {
 }
 
 .comment-card .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* create */
@@ -194,8 +240,13 @@ a {
 }
 
 .create form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .create form * {
