@@ -1,0 +1,1 @@
+This project is a full-stack web application that implements simple social media features. You can view it [here](https://658e6bb04abcd67d57ff6e3e--weichat.netlify.app/).
