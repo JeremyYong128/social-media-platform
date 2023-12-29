@@ -34,7 +34,7 @@ const Create = () => {
 
         const post = { title, author, body }
 
-        const response = await fetch('https://weichat.onrender.com/posts/', {
+        const response = await fetch(`https://weichat.onrender.com/posts/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
